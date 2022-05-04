@@ -1,0 +1,99 @@
+.hero{
+    margin-bottom: 136px;
+    &__container{
+        background-color: #979797;
+        padding: 116px 85px;
+        border-radius: 10px;
+        background-image: url("../img/home/home-hero-bacgraund-img/home-hero-backgraund-img-1x.jpg");
+        background-repeat: no-repeat;
+        background-position: auto;
+        background-size: cover;
+    }
+    &__left{
+        max-width: 493px;
+    }
+
+    &__heading{
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FEFCF7;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 32px;
+    }
+
+    &__desc{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+        mix-blend-mode: normal;
+        opacity: 0.8;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 56px;
+        max-width: 420px;
+    }
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+    .hero__container{
+        background-image: url("../img/home/home-hero-bacgraund-img/home-hero-bacgraund-img2x@2x.png");
+        background-repeat: no-repeat;
+    }
+
+}
+@media only screen and (max-width:716px){
+   .hero{
+
+       &__container{
+          padding: 104px 58px;
+        }
+
+        &__container{
+            padding: 104px 58px;
+        }
+       &__heading{
+           font-size: 48px;
+           line-height: 48px;
+       }
+
+       &__desc{
+           line-height: 25px;
+           font-size: 15px;
+       }
+   }
+}
+
+@media only screen and (max-width:375px ){
+    .hero{
+        &__container{
+            padding: 100px 24px;
+        }
+
+        &__container:active{
+            padding: 100px 24px;
+
+        }
+        &__heading{
+            margin-bottom: 24px;
+        }
+        &__desc{
+            margin-bottom: 39px;
+        }
+
+        &__button{
+            flex-shrink: 0;
+        }
+    }
+}

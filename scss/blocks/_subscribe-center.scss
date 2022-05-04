@@ -1,0 +1,127 @@
+.subscribe-center{
+    margin-bottom: 168px;
+    &__container{
+        background-color: #2C343E;
+        padding: 99px 85px;
+        border-radius: 10px;
+    }
+
+    &__top{
+        margin-bottom: 82px;
+    }
+
+    &__img{
+        margin-bottom: 38px;
+    }
+
+    &__list{
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__item{
+        max-width: 285px;
+        width: 100%;
+    }
+
+    &__item + &__item{
+        margin-left: 95px;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #FEFCF7;
+        margin-bottom: 43px;
+    }
+    &__desc{
+        margin: 0;
+        padding: 0;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;
+
+    }
+}
+@media only screen and (max-width: 1440px){
+    .container {
+      max-width: 1352px;
+    }
+  }
+
+  @media only screen and (max-width: 1201px){
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media only screen and (max-width:883px){
+      .subscribe-center{
+          &__container{
+              padding: 70px 40px;
+          }
+
+          &__item + &__item{
+            margin-left: 10px;
+          }
+      }
+  }
+
+  @media only screen and (max-width: 768px){
+
+    .subscribe-center{
+        margin-bottom: 144px;
+        &__container{
+            padding: 70px 30px;
+        }
+
+    }
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media only screen and (max-width: 576px){
+    .subscribe-center{
+        margin-bottom: 120px;
+        &__container{
+            padding: 80px 24px;
+        }
+        &__top{
+            display: none;
+        }
+        &__list{
+            flex-direction: column;
+            text-align: center;
+        }
+
+
+        &__item + &__item{
+          margin: 0px;
+          margin: 60px auto;
+
+        }
+
+        &__item{
+            margin: 0 auto;
+        }
+    }
+    .container {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,117 @@
+.siteheader{
+    margin-bottom: 5px;
+    padding: 40px 0;
+
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo{
+        flex-shrink: 0;
+
+    }
+
+
+    &__nav-list{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__nav-link{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+        padding: 3px;
+        border: solid 2px white;
+        border-radius: 3px;
+    }
+    &__nav-link:hover{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: black;
+        opacity: 0.6;
+        transition: all 0.5s;
+        border: solid 2px #37AEE2;
+        border-radius: 3px;
+        padding: 3px;
+    }
+    &__nav-link:active{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: blue;
+        background-color:#37AEE2 ;
+        transition: all 0.1s;
+        border-radius: 3px;
+        border: solid 2px #37AEE2;
+        padding: 3px;
+    }
+    &__button{
+        border: none;
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    .siteheader{
+        &__container{
+            position: relative;
+        }
+        &__nav{
+            display: none;
+        }
+
+        &__button{
+            display: inline-block;
+        }
+    }
+
+    .siteheader--open .siteheader__nav{
+        display: inline-block;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        top: 100%;
+        width: 100%;
+        background-color: #0E8784;
+       }
+
+    .siteheader--open .siteheader__nav-list{
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+    }
+
+    .siteheader--open .siteheader__nav-item{
+        text-align: end;
+        width: 100%;
+        left: 0;
+        padding-right: 30px;
+
+    }
+
+}

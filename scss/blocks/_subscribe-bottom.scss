@@ -1,0 +1,238 @@
+.subscribe-bottom{
+
+    &__container{
+        padding: 0 165px;
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr;
+        margin: 0 auto;
+
+
+    }
+
+    &__left{
+        max-width: 255px;
+        width: 100%;
+        align-self: flex-start;
+        margin-right: 125px;
+    }
+
+    &__left-link{
+        text-decoration: none;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+        opacity: 0.4;
+        border-bottom: 1px solid #333D4B;
+    }
+
+    &__left-link:hover{
+        opacity: 0.6;
+    }
+
+    &__left-link:active{
+        color: black;
+    }
+    &__form{
+        text-align: start;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        row-gap: 88px;
+
+    }
+
+    &__heading{
+        margin: 30px;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #83888F;
+
+    }
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-auto-rows: minmax(250px, auto);
+
+    }
+
+    &__wrapper + &__wrapper{
+        margin-top: 88px;
+    }
+
+    &__box{
+        background-color: #F4F1EB;;
+        border-radius: 10px;
+        margin: 10px;
+        max-width: 228px;
+        width: 100%;
+        height: 100%;
+        padding: 32px 28px;
+    }
+
+    &__box + &__box{
+        margin-left: 23px;
+    }
+
+    &__box:hover{
+        background-color: #FDD6BA;
+    }
+
+    &__box-heading{
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #333D4B;
+    }
+    &__box-desc{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+    }
+
+    &__end{
+        border-radius: 10px;
+        background-color: #333D4B;
+        max-width: 730px;
+        width: 100%;
+        padding: 64px 27px;
+    }
+    &__end-heading{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        margin-bottom: 8px;
+    }
+
+    &__end-desc{
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 40px;
+        color: #FFFFFF;
+    }
+
+
+
+    &__button-box{
+        text-align: end;
+        margin-bottom: 168px;
+    }
+
+    &__button{
+        display: inline-block;
+        max-width: 217px;
+
+
+    }
+
+}
+input:checked + .subscribe-bottom__box{
+    background-color: #0E8784;
+}
+
+span{
+    color: #0E8784;
+}
+
+
+@media only screen and (max-width: 1440px){
+    .container {
+      max-width: 1352px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+      .subscribe-bottom{
+          &__container{
+              padding: 0 10px;
+          }
+          &__left{
+              display: none;
+              margin: 0;
+              padding: 0;
+          }
+      }
+    .container {
+      max-width: 960px;
+    }
+  }
+
+  @media only screen and (max-width: 992px){
+    .container {
+      max-width: 720px;
+    }
+  }
+
+  @media only screen and (max-width: 768px){
+    .container {
+      max-width: 540px;
+    }
+  }
+
+  @media only screen and (max-width: 576px){
+      .subscribe-bottom{
+        &__container{
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              align-items: center;
+              align-self: center;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        &__heading{
+              font-size: 24px;
+              line-height: 28px;
+        }
+        &__wrapper{
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              margin: 0 auto;
+        }
+
+        &__box{
+              padding: 24px;
+              max-width: 500px;
+              width: 100%;
+              margin: 0 auto;
+        }
+
+        &__box-heading{
+              font-size: 24px;
+              line-height: 32px;
+        }
+
+        &__box-desc{
+              font-size: 16px;
+              line-height: 26px;
+        }
+      }
+    .container {
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,181 @@
+.how-it{
+    margin-top: 200px;
+    margin-bottom: 247px;
+
+    &__heading{
+        margin: 0;
+        padding: 0;
+        font-family: 'Fraunces 9pt';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 24px;
+        line-height: 32px;
+        color: #83888F;
+    }
+    &__center{
+        margin-top: 80px;
+        margin-bottom: 67px;
+        background-image: url("../img/home/line-home.png");
+        background-repeat: no-repeat;
+        background-size: 770px 1px;
+        align-items: center;
+
+    }
+    &__img{
+        margin-top: -20px;
+    }
+    &__img + &__img{
+        margin-left: 349px;
+    }
+
+
+    &__list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item{
+        margin: 0;
+        padding: 0;
+        max-width: 285px;
+    }
+
+    &__list-img{
+        margin-bottom: 38px;
+    }
+
+    &__list-heading{
+        padding-right: 25px;
+        margin: 0;
+        padding: 0;
+        max-width: 300px;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 32px;
+        line-height: 36px;
+        color: #333D4B;
+        margin-bottom: 42px;
+    }
+
+    &__desc{
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #333D4B;
+        margin-bottom: 64px;
+        padding-right: 5px;
+    }
+}
+
+@media only screen and (max-width:1201px){
+    .how-it{
+        &__center{
+            background-size: 740px;
+        }
+
+        &__img + &__img{
+            margin-left: 323px;
+        }
+    }
+}
+
+@media only screen and (max-width:1005px){
+    .how-it{
+        &__center{
+            background-size: 720px;
+        }
+
+        &__img + &__img{
+            margin-left: 310px;
+        }
+    }
+}
+
+@media only screen and (max-width:993px){
+    .how-it{
+        &__center{
+            background-size: 480px;
+        }
+
+        &__img + &__img{
+            margin-left: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width:866px){
+    .how-it{
+        &__center{
+            background-size: 400px;
+        }
+
+        &__img + &__img{
+            margin-left: 160px;
+        }
+    }
+}
+@media only screen and (max-width:842px){
+    .how-it{
+        &__center{
+            background-size: 390px;
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+        &__img + &__img{
+            margin-left: 160px;
+        }
+    }
+}
+@media only screen and (max-width:768px){
+    .how-it{
+
+        &__center{
+            background-size: 320px;
+            margin-top: 40px;
+            margin-bottom: 48px;
+        }
+        &__img + &__img{
+            margin-left: 110px;
+        }
+        &__item{
+            max-width: 223px;
+        }
+
+        &__desc{
+            margin-bottom: 44px;
+        }
+    }
+}
+
+@media only screen and (max-width:575px){
+    .how-it{
+        &__heading{
+            margin-bottom: 80px;
+            text-align: center;
+        }
+        &__center{
+            display: none;
+        }
+
+        &__list{
+            flex-direction: column;
+            text-align: center;
+        }
+
+        &__list-heading{
+            font-size: 28px;
+            line-height: 32px;
+        }
+
+        &__button-box{
+            text-align: center;
+        }
+    }
+}

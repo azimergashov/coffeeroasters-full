@@ -1,0 +1,113 @@
+.about-hero{
+    margin-top: 45px;
+    &__container{
+        border-radius: 10px;
+        padding: 85px 137px;
+        background-image: url("../img/about-us/about-us-hero1x.png");
+        background-repeat: no-repeat;
+
+
+    }
+    &__right{
+        max-width: 445px;
+    }
+    &__heading{
+        margin: 0;
+        padding: 0;
+        font-family: 'Fraunces';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 48px;
+        color: #FEFCF7;
+        margin-bottom: 24px;
+    }
+
+    &__desc{
+        margin: 0;
+        padding: 0;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #FEFCF7;}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .about-hero{
+      &__container{
+          background-image: url("../img/about-us/about-us-hero2x@2x.png");
+      }
+  }
+}
+
+@media only screen and (max-width:769px){
+    .about-hero{
+        &__container{
+         background-color: #FEFCF7;
+        }
+    }
+}
+
+
+@media only screen and (max-width:768px){
+    .about-hero{
+        &__container{
+            background-image: url("../img/about-us/about-us-hero-tablet1x.jpg");
+            padding: 118px 58px;
+        }
+
+        &__heading{
+            font-size: 32px;
+            line-height: 40px;
+        }
+
+        &__desc{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
+
+@media only screen and (max-width:587px){
+    .about-hero{
+        &__container{
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width:400px){
+    .about-hero{
+        &__container{
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .about-hero{
+        &__container{
+            background-image: url("../img/about-us/about-hero-mobile1x.jpg");
+            padding: 87px 24px;
+        }
+
+        &__heading{
+            margin-top: 24px;
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        &__desc{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}

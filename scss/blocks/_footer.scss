@@ -1,0 +1,128 @@
+.site-footer{
+
+    background-color: #2C343E;
+    padding: 47px 0px;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left{
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        margin-right: 100px;
+    }
+
+    &__list{
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item + &__item{
+        margin-left: 33px;
+    }
+    &__link{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #83888F;
+        padding: 3px;
+        border: solid 2px #2C343E;
+        border-radius: 3px;
+    }
+
+    &__link:hover{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: red;
+        opacity: 0.6;
+        transition: all 0.5s;
+        border: solid 2px red;
+        border-radius: 3px;
+        padding: 3px;
+
+    }
+
+    &__link:active{
+        text-decoration: none;
+        font-family: 'Barlow';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: red;
+        background-color: darkred;
+        transition: all 0.1s;
+        border-radius: 3px;
+        border: solid 2px red;
+        padding: 3px;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+    }
+
+    &__button + &__button{
+        margin-left: 33px;
+    }
+    &__button{
+        transition: all 0.4s;
+        color: white;
+    }
+    &__button :hover{
+        color: #FDD6BA;;
+    }
+}
+
+
+@media only screen and (max-width:992px){
+    .site-footer{
+        &__logo{
+            margin-right: 10px;
+            margin-bottom: 32px;
+        }
+        &__container{
+            flex-direction: column;
+        }
+        &__left{
+            margin-bottom: 65px;
+            flex-direction: column;
+        }
+    }
+}
+
+@media only screen and (max-width:375px){
+    .site-footer{
+
+        &__logo-img{
+            width: 217px;
+            height: 24px;
+        }
+        &__list{
+            flex-direction: column;
+        }
+        &__item{
+            text-align: center;
+        }
+        &__item + &__item{
+            margin-left: 0px;
+        }
+    }
+}
